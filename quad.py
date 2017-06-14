@@ -1,5 +1,6 @@
 from math import sqrt as sqrt
-from numpy import arrange as arrange
+from numpy import arange as arange
+import matplotlib.pyplot as plt
 print('Ax^2 + Bx + C')
 a = input('Enter the value of A: ')
 b = input('Enter the value of B: ')
@@ -22,9 +23,9 @@ else:
     x2 = ((-b) + sqrt((b ** 2) - (4 * a * c))) / (2 * a)
     print('There are two real solutions: ', x1, ' and ', x2)
 
-xvals = arrange(-50,50,2)
+xvals = arange(-50,50,2)
 
 yvals = (a * (xvals ** 2)) + (b * xvals + (c))
-plot(xvals, yvals)
-grid(True)
-show()
+plt.plot(xvals, yvals)
+plt.grid(True)
+plt.show()
