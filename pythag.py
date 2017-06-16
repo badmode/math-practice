@@ -1,5 +1,5 @@
 import math
-def sides(n):
+def sides(x):
     h=int(input('What is the first length? '))
     i=int(input('What is the second side length? '))
     j=math.sqrt((h ** 2) + (i ** 2))

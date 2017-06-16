@@ -1,5 +1,5 @@
 from math import sqrt as sqrt
-from numpy import arange as arange
+from numpy import arange
 import matplotlib.pyplot as plt
 print('Ax^2 + Bx + C')
 a = input('Enter the value of A: ')
